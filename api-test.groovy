@@ -12,9 +12,18 @@ timout(60) {
                         results: ["$pwd/allure-results"]
                 ])
             }
+            stage("Telegram notification"){
+             /*   def allureReport readFile text: $pwd/allure-results/export/influxDbData.txt
+                HttpClient client = HttpClient.newHttpClient();
+                HttpRequest request = HttpRequest.newBuilder()
+                                                 .uri(URI.create("http://example.com/resource"))
+                                                 .POST()
+                                                 .build();*/
+            }
         } finally {
             sh "docker stop $testContainerName"
         }
 
     }
 }
+
