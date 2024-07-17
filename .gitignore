@@ -1,3 +1,5 @@
 /docker-compose
 docker-compose
 /registry
+/.idea
+jenkins_config.iml
