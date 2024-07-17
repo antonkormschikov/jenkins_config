@@ -1,0 +1,6 @@
+---
+
+- project:
+    name: 'ui-tests2'
+    jobs:
+      - ' test'

@@ -1,0 +1,8 @@
+FROM jenkins/slave
+
+USER root
+
+RUN apt-get update -y \
+    && apt-get install ca-certificates-java -y \
+    && apt-get install openjdk-11-jre-headless:amd64 -y \
+    && apt-get install maven -y

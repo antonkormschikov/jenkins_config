@@ -1,0 +1,11 @@
+---
+
+- scm:
+    name: git-ui-tests
+    scm:
+    - git:
+        url: git@github.com:antonkormschikov/otusProfHW_selenium.git
+        credentials-id: jenkins
+        branches:
+        - FETCH_HEAD
+        refspec: ${REFSPEC}
