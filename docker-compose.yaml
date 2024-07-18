@@ -2,6 +2,7 @@ version: '3.7'
 services:
   selenoid:
     container_name: selenoid
+    hostname: selenoid
     image: aerokube/selenoid:1.11.2
     networks:
       - selenoid
@@ -14,6 +15,7 @@ services:
 
   ggr:
     container_name: ggr
+    hostname: ggr
     depends_on:
       - selenoid
     image: aerokube/ggr:1.7.2
@@ -29,6 +31,7 @@ services:
 
   ggr-ui:
     container_name: ggr-ui
+    hostname: ggr-ui
     depends_on:
       - ggr
     image: aerokube/ggr-ui:1.2.0
@@ -39,6 +42,7 @@ services:
 
   selenoid-ui:
     container_name: selenoid-ui
+    hostname: selenoid-ui
     depends_on:
       - ggr-ui
     image: aerokube/selenoid-ui:1.10.11
