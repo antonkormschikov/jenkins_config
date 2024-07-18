@@ -25,7 +25,7 @@ services:
       - /etc/grid-router:/etc/grid-router:ro
     command:
       - "-guests-allowed"
-      - "-guests-quota=selenoid"
+      - "-guests-quota=test"
       - "-verbose"
       - "-quotaDir=/etc/grid-router/quota"
 
