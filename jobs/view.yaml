@@ -12,11 +12,11 @@
       - 'api-tests'
       - 'ui-tests'
     columns:
-      - weather
-      - status
-      - job
-      - last-success
-      - last-failure
-      - last-duration
-      - build-button
+      - 'weather'
+      - 'status'
+      - 'job'
+      - 'last-success'
+      - 'last-failure'
+      - 'last-duration'
+      - 'build-button'
 
