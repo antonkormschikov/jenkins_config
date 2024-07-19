@@ -1,5 +1,8 @@
 ---
 - project:
-    name: 'ui-tests2'
+    name: 'project_tests'
     jobs:
-      - 'test'
+      - 'runner'
+      - 'api-tests'
+      - 'ui-tests'
+

@@ -9,3 +9,13 @@
         branches:
         - FETCH_HEAD
         refspec: ${REFSPEC}
+
+- scm:
+    name: git-api-tests
+    scm:
+    - git:
+        url: git@github.com:antonkormschikov/otusProfHW_RestAssured.git
+        credentials-id: jenkins
+        branches:
+        - FETCH_HEAD
+        refspec: ${REFSPEC}

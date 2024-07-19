@@ -3,8 +3,8 @@ timout(60) {
         prepareConfig()
         }
         stage("Checkout"){
-            Checkout  git-ui-tests
-            git branch: $REFSPEC, url: "git@github.com:antonkormschikov/otusProfHW_selenium.git"
+            Checkout  git-api-tests
+            git branch: $REFSPEC, url: "git@github.com:antonkormschikov/otusProfHW_RestAssured.git"
         }
         def jobs=[:]
         env.TESTS_TYPE.each(v ->{

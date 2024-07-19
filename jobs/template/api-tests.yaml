@@ -1,6 +1,6 @@
 - job-template:
-    name: 'test'
-    description: '<h3>test job</h3>'
+    name: 'api-tests'
+    description: '<h3>api test job</h3>'
     project_type: pipeline
     concurrent: true
     properties:
@@ -13,12 +13,12 @@
       - text:
           name: YAML_CONFIG
           default: |
-            BROWSER_NAME: chrome
+            
       - string:
           name: BRANCH
           default: master
           description: Branch for tempest nova API tests
     pipeline-scm:
       scm:
-      - git-ui-tests
-      script-path: jenkins/ui-test.groovy
+      - git-api-tests
+      script-path: jenkins/api_test.groovy
