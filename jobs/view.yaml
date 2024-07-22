@@ -1,7 +1,7 @@
 ---
 - view
-    name: QA
-    view-type: list
+    name:  QA
+    view-type:  list
     description: 
        QA
     filter-executors: true
