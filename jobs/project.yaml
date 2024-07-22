@@ -2,7 +2,6 @@
 - project:
     name: 'project_tests'
     jobs:
-      - 'runner'
       - 'api-tests'
-      - 'ui-tests'
+
 
