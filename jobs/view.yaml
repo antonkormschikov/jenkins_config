@@ -1,10 +1,9 @@
 ---
-
 - view
     name: QA
     view-type: list
-    description: testoviy 
-      QA
+    description: 
+       QA
     filter-executors: true
     filter-queue: true
     job-name:
