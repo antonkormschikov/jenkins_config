@@ -1,19 +1,9 @@
 ---
 
 - scm:
-    name: git-ui-tests
-    scm:
-    - git:
-        url: git@github.com:antonkormschikov/otusProfHW_selenium.git
-        credentials-id: jenkins
-        branches:
-        - FETCH_HEAD
-        refspec: ${REFSPEC}
-
-- scm:
     name: git-api-tests
     scm:
-    - git:
+     - git:
         url: git@github.com:antonkormschikov/otusProfHW_RestAssured.git
         credentials-id: jenkins
         branches:

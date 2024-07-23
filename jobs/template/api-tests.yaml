@@ -20,5 +20,5 @@
           description: Branch for tempest nova API tests
     pipeline-scm:
       scm:
-      - git-api-tests
+        - git-api-tests
       script-path: jenkins/api_test.groovy
