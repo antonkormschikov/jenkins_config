@@ -6,6 +6,5 @@
      - git:
         url: git@github.com:antonkormschikov/otusProfHW_RestAssured.git
         credentials-id: jenkins
-        branches:
-        - FETCH_HEAD
-        refspec: ${REFSPEC}
+        branches: master 
+        
