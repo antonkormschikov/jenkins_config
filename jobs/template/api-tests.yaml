@@ -13,7 +13,7 @@
       - text:
           name: YAML_CONFIG      
       - string:
-          name: ${REFSPEC}
+          name: REFSPEC
           default: master
           description: Branch for tempest nova API tests
     pipeline-scm:
