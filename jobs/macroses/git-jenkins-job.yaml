@@ -6,5 +6,5 @@
      - git:
         url: git@github.com:antonkormschikov/otusProfHW_RestAssured.git
         credentials-id: jenkins
-        branches: master 
+        branches: main
         
