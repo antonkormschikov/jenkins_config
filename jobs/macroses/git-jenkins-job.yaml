@@ -3,7 +3,7 @@
 - scm:
     name: git-api-tests
     scm:
-     - git:
+    - git:
         url: git@github.com:antonkormschikov/otusProfHW_RestAssured.git
         credentials-id: jenkins
         branches: master 
