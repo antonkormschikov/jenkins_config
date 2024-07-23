@@ -9,11 +9,7 @@
     logrotate:
       daysToKeep: 30
       numToKeep: 10
-    parameters:
-      - text:
-          name: YAML_CONFIG
-          default: |
-            
+    parameters:           
       - string:
           name: BRANCH
           default: main
