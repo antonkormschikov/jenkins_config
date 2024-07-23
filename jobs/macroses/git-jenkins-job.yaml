@@ -8,4 +8,4 @@
           credentials-id: jenkins
           branches: 
            - origin/master
-          skip-tag: true
+          
