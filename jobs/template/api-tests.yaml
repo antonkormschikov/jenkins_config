@@ -9,10 +9,12 @@
     logrotate:
       daysToKeep: 30
       numToKeep: 10
-    parameters:           
+    parameters:     
+      - text:
+          name: YAML_CONFIG      
       - string:
-          name: BRANCH
-          default: main
+          name: ${REFSPEC}
+          default: master
           description: Branch for tempest nova API tests
     pipeline-scm:
       scm:
