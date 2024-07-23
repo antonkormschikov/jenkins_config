@@ -3,9 +3,9 @@
 - scm:
     name: git-api-tests
     scm:
-    - git:
-        url: git@github.com:antonkormschikov/otusProfHW_RestAssured.git
-        credentials-id: jenkins
-        branches: master 
-        - FETCH_HEAD
-        refspec: ${REFSPEC}
+      - git:
+          url: 'git@github.com:antonkormschikov/otusProfHW_RestAssured.git'
+          credentials-id: jenkins
+          branches: 
+           - origin/master
+          skip-tag: true
