@@ -1,21 +1,22 @@
 - job-template:
     name: 'api-tests'
-    description: '<h3>api test job</h3>'
-    project_type: pipeline
+    description: '<h3 style="color: magenta;">api test job</h3>'
+    project-type: pipeline
     concurrent: true
     properties:
         - build-discarder:
-            num-to-keep: 10
+            num-to-keep: 3
     logrotate:
       daysToKeep: 30
       numToKeep: 10
     parameters:     
-      - text:
+      - text: 
           name: YAML_CONFIG      
-          default: 
+          default:  |
+             BASE_URL: 'http.otus.ru'
       - string:
-         name: BRANCH
-         default: master
+         name: REFSPEC
+         default: main
          description: Branch for tempest nova API tests
     pipeline-scm:
       scm:

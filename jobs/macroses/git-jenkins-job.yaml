@@ -4,8 +4,6 @@
     name: git-api-tests
     scm:
       - git:
-          url: 'git@github.com:antonkormschikov/otusProfHW_RestAssured.git'
-          credentials-id: jenkins
-          branches: 
-           - origin/master
-          
+          url: 'https://github.com/antonkormschikov/otusProfHW_RestAssured.git'
+          credentials-id: 14882b4d-d353-4720-85d9-149911444cbc
+          branches: ${REFSPEC}
