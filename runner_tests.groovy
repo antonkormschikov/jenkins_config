@@ -1,3 +1,4 @@
+// нужнен рефакторинг
 timout(60) {
     node("maven"){
         prepareConfig()
